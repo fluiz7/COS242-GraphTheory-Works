@@ -1,2 +1,2 @@
 grafo: ../Grafos/grafo_5.txt | representacao: lista de adjacencia | modo: aproximado
-diametro aproximado = 58  (10538.5 ms)  (cota inferior)
+diametro aproximado = 58  (6849.2 ms)  (cota inferior)

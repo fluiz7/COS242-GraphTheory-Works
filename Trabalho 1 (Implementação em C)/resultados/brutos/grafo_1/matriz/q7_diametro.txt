@@ -1,2 +1,2 @@
 grafo: ../Grafos/grafo_1.txt | representacao: matriz de adjacencia | modo: aproximado
-diametro aproximado = 4  (205.5 ms)  (cota inferior)
+diametro aproximado = 4  (135.4 ms)  (cota inferior)

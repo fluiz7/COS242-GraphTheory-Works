@@ -3,8 +3,8 @@
 Ambiente de execução:
 
 ```
-data: 2026-09-17 17:55
-commit: f472062
+data: 2026-09-25 20:25
+commit: bf265fb
 sistema: Linux 6.18.33.2-microsoft-standard-WSL2 x86_64
 processador: 12th Gen Intel(R) Core(TM) i5-12400F
 nucleos: 12
@@ -44,12 +44,12 @@ Memória residente do processo (VmRSS) depois de carregar menos a de antes. Na m
 
 | Grafo | BFS lista | BFS matriz | DFS lista | DFS matriz |
 |---|--:|--:|--:|--:|
-| grafo_1 | 2,47 | 42,81 | 5,47 | 46,05 |
-| grafo_2 | 14,64 | 346,16 | 33,05 | 368,46 |
-| grafo_3 | 54,10 | inviável (131,0 GB) | 100,13 | inviável (131,0 GB) |
-| grafo_4 | 208,33 | inviável (131,0 GB) | 388,98 | inviável (131,0 GB) |
-| grafo_5 | 867,99 | inviável (21.850,6 GB) | 1.856,24 | inviável (21.850,6 GB) |
-| grafo_6 | 2.250,32 | inviável (21.850,6 GB) | 4.167,78 | inviável (21.850,6 GB) |
+| grafo_1 | 2,58 | 46,36 | 5,33 | 47,13 |
+| grafo_2 | 13,82 | 359,63 | 29,48 | 378,31 |
+| grafo_3 | 51,90 | inviável (131,0 GB) | 91,38 | inviável (131,0 GB) |
+| grafo_4 | 194,83 | inviável (131,0 GB) | 355,81 | inviável (131,0 GB) |
+| grafo_5 | 830,78 | inviável (21.850,6 GB) | 1.610,75 | inviável (21.850,6 GB) |
+| grafo_6 | 2.102,31 | inviável (21.850,6 GB) | 3.677,09 | inviável (21.850,6 GB) |
 
 Média de 100 buscas de cada tipo, partindo de vértices distintos espalhados por [1, n]. O cronômetro cobre apenas o algoritmo (sem leitura nem escrita).
 
@@ -92,12 +92,12 @@ Média de 100 buscas de cada tipo, partindo de vértices distintos espalhados po
 
 | Grafo | Aproximado | Tempo aprox. (s) | Exato | Tempo exato (s) |
 |---|--:|--:|--:|--:|
-| grafo_1 | 4 | 0,01 | 5 | 23,2 |
-| grafo_2 | 20 | 0,13 | 20 | 787,2 |
-| grafo_3 | 22 | 0,53 | não calculado | — |
-| grafo_4 | 5 | 1,33 | não calculado | — |
-| grafo_5 | 58 | 10,54 | não calculado | — |
-| grafo_6 | 19 | 19,15 | não calculado | — |
+| grafo_1 | 4 | 0,01 | 5 | 16,8 |
+| grafo_2 | 20 | 0,09 | 20 | 612,0 |
+| grafo_3 | 22 | 0,31 | não calculado | — |
+| grafo_4 | 5 | 1,09 | não calculado | — |
+| grafo_5 | 58 | 6,85 | não calculado | — |
+| grafo_6 | 19 | 15,61 | não calculado | — |
 
 Aproximado: dupla varredura (2 BFS por componente), uma cota inferior do diâmetro. Exato: BFS a partir de cada vértice, calculado só nos grafos menores. Medido na lista.
 
